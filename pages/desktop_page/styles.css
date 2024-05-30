@@ -176,11 +176,11 @@ body {
     width: 1512px;
     height: 924px;
     background-color: #1E1F27;
+    padding: 80px 0px;
 }
 
 .main-content2 {
-    width: 1208px;
-    height: 500px;
+    width: 1400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -193,12 +193,17 @@ body {
     font-size: 56px;
     color: #FFFFFF;
     text-align: center;
+    padding: 0;
+    margin-right: 152px;
 }
 
 #stats-list {
     display: flex;
     justify-content: center;
     list-style: none; 
+    margin-left: 152px;
+    padding: 0;
+    gap: 40px;
 }
 
 #stats-list li .value {
@@ -208,7 +213,8 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 64px;
     font-weight: 700;
-    margin-right: 40px;
+    margin-right: 50px;
+    margin-bottom: 16px;
 }
 
 #stats-list li .caption {
@@ -219,4 +225,70 @@ body {
     font-size: 32px;
     font-weight: 700;
     margin-right: 40px;
+}
+
+/* donations-block */
+#donations-block {
+    width: 1512px;
+    height: 1117px;
+    padding: 80px 0px 120px 0px;
+    background-color: #1E1F27;
+}
+
+.main-content3 {
+    width: 1208px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    color: #FFFFFF;
+    line-height: 67.2px;
+    text-align: center;
+    margin-left: 152px;
+    margin-bottom: 80px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0px 0px 0px;
+    gap: 40px;
+    margin-bottom: 60px;
+    margin-left: 132px;
+}
+
+.card-row {
+    border: 2px solid #FFFFFF;
+    border-radius: 24px;
+    padding: 36px;
+    width: 316px;
+}
+
+.card-row h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #FFFFFF
+}
+
+.card-row p {
+    font-family: 'Inter', sans-serif;;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+    line-height: 32px;
+}
+
+.img-card {
+    float: right;
+    max-width: 100px;
+    max-height: 100px;
 }
