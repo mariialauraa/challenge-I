@@ -187,7 +187,7 @@ body {
     flex-direction: column;
 }
 
-.text-information h2 {
+.title-text {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 56px;
@@ -244,7 +244,7 @@ body {
     margin-left: 70px;
 }
 
-h2 {
+.title-donations {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 56px;
@@ -291,4 +291,104 @@ h2 {
     float: right;
     max-width: 100px;
     max-height: 100px;
+}
+
+/* adopt-info-block */
+#adopt-info-block {
+    width: 1512px;
+    height: 907px;
+    background-color: #F5F5F5;
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-content4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1208px;
+    height: auto;
+    margin: 80px 120px 152px 152px;
+}
+
+.title-info {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    color: #1E1F27;
+    line-height: 67.2px;
+    letter-spacing: -2%;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.content-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container4 {
+    width: 100%;
+    max-width: 1208px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.text-block4 {
+    display: flex;
+    flex-direction: column;
+    max-width: 584px;
+}
+
+.title-list {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #1E1F27;
+    line-height: 51.2px;
+    letter-spacing: -2%;
+    margin-bottom: 20px;
+}
+
+#list4 {
+    margin: 0;
+    padding-left: 20px;
+}
+
+#list4 li {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #37383F;
+    line-height: 38.4px;
+    margin-bottom: 4px;
+}
+
+#adopt-btn {
+    background-color: #1E1F27;
+    color: white;
+    width: 217px;
+    height: 64px;
+    border-radius: 32px;
+    padding: 16px 32px;
+    gap: 8px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 32px;
+}
+
+/* difference-block */
+#difference-block {
+    width: 1512px;
+    height: 732px;
+    background-color: #1E1F27;
+    box-sizing: border-box;
+    margin: 0;
 }
