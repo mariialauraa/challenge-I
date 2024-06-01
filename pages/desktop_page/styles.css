@@ -609,20 +609,22 @@ body {
     width: 100%;
     max-width: 1512px;
     max-height: 431px;
-    padding: 80px 0px;
     background-color: #5758F1;
     display: flex;
     justify-content: center;
+    padding: 80px 0px;
     margin: 0;
 }
 
 .main-content7 {
     width: 100%;
     max-width: 1208px;
+    max-height: 431px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: auto;
 }
 
 .title-header {
@@ -685,21 +687,20 @@ input[type="text"]::placeholder {
 }
 
 /* footer */
-#footer {
+footer {
     width: 100%;
     max-width: 1512px;
     max-height: 603px;
-    padding: 80px 0px;
     background-color: #F5F5F5;
+    padding: 80px 0px;
     margin: 0;
 }
 
 .main-content-footer {
     width: 100%;
     max-width: 1208px;
-    height: 443px;
-    margin: 80px 80px 152px 152px;
-    background-color: #F5F5F5;
+    max-height: 443px;
+    margin: auto;
 }
 
 .container-footer {
