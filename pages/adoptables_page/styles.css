@@ -110,6 +110,7 @@ body {
     background-color: #37383F;
     line-height: 32px;
     color: white;
+    cursor: pointer;
 }
 
 .btn-back img {
