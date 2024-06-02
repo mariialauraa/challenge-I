@@ -140,9 +140,50 @@
 .term {
     width: 100%;
     max-width: 384px;
+    height: 24px;     
+    display: flex;
+    align-items: center;
+}
+
+.term-radio {
+    appearance: none;
+    background-color: #37383F;
+    width: 24px;
     height: 24px;
-    gap: 12px; 
-    background-color: gray;
+    cursor: pointer;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.term-radio:before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: #04C27F;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.term-radio:checked:before {
+    opacity: 1;
+}
+
+.term-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #1E1F27;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.term-text span {
+    color: #FF3D9A;
 }
 
 .btn-modal {

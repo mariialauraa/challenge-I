@@ -56,80 +56,7 @@
                                     Apply to Adopt
                                 </button>
 
-                                <div id="fade" class="hide"></div>
-                                <div id="modal" class="hide">
-                                    <div class="modal-header">
-                                        <h1 class="title-modal">
-                                            Apply to Adopt
-                                        </h1>
-                                    </div>
 
-                                    <div class="modal-body">
-                                        <div class="wrap">
-                                            <label>
-                                                EMAIL<span>*</span>
-                                            </label>
-                                            <form class="form-modal">
-                                                <input 
-                                                    type="email" 
-                                                    placeholder="youremail@here"
-                                                    class="input" 
-                                                >
-                                            </form>
-                                        </div>
-                                        <div class="wrap">
-                                            <label>
-                                                FULL NAME<span>*</span>
-                                            </label>
-                                            <form class="form-modal">
-                                                <input 
-                                                    type="text" 
-                                                    placeholder="Your name"
-                                                    class="input" 
-                                                >
-                                            </form>
-                                        </div>
-                                        <div class="wrap">
-                                            <label>
-                                                DATE OF BIRTH<span>*</span>
-                                            </label>
-                                            <form class="form-modal">
-                                                <input 
-                                                    type="number" 
-                                                    name="day"
-                                                    placeholder="Day"
-                                                    class="input-date" 
-                                                    min="1" max="31"
-                                                >
-                                                <input 
-                                                    type="number" 
-                                                    name="month"
-                                                    placeholder="Month"
-                                                    class="input-date" 
-                                                    min="1" max="12"
-                                                >
-                                                <input 
-                                                    type="number" 
-                                                    name="year"
-                                                    placeholder="Year"
-                                                    class="input-date" 
-                                                    min="1924" max="2024"
-                                                >
-                                            </form>
-                                        </div>
-
-                                        <div class="wrap-btn">
-                                            <div class="term">
-                                            </div>
-                                            <button class="btn-modal btn-ok" id="ok-btn">
-                                                I wanna Adopt!
-                                            </button>
-                                            <button class="btn-modal btn-cancel" id="cancel-btn">
-                                                Cancel
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -256,7 +183,9 @@
                     <div class="card-row5">
                         <h4>Adopt or Foster</h4>
                         <p>Provide a forever or temporary home to a homeless animal.</p>
-                        <button class="btn btn-green">View Adoptables</button>
+                        <button class="btn btn-green">
+                            View Adoptables
+                        </button>
                     </div>
                     <div class="card-row5">
                         <h4>Volunteer</h4>
@@ -323,6 +252,93 @@
                 </form>
             </div>
         </section>
+
+        <!-- Adopt Modal -->
+        <div id="fade" class="hide"></div>
+        <div id="modal" class="hide">
+            <div class="modal-header">
+                <h1 class="title-modal">
+                    Apply to Adopt
+                </h1>
+            </div>
+        
+            <div class="modal-body">
+                <div class="wrap">
+                    <label>
+                        EMAIL<span>*</span>
+                    </label>
+                    <form class="form-modal">
+                        <input 
+                            type="email" 
+                            placeholder="youremail@here"
+                            class="input" 
+                            required
+                        >
+                    </form>
+                </div>
+                <div class="wrap">
+                    <label>
+                        FULL NAME<span>*</span>
+                    </label>
+                    <form class="form-modal">
+                        <input 
+                            type="text" 
+                            placeholder="Your name"
+                            class="input" 
+                            required
+                        >
+                    </form>
+                </div>
+                <div class="wrap">
+                    <label>
+                        DATE OF BIRTH<span>*</span>
+                    </label>
+                    <form class="form-modal">
+                        <input 
+                            type="number" 
+                            name="day"
+                            placeholder="Day"
+                            class="input-date" 
+                            min="1" max="31"
+                            required
+                        >
+                        <input 
+                            type="number" 
+                            name="month"
+                            placeholder="Month"
+                            class="input-date" 
+                            min="1" max="12"
+                            required
+                        >
+                        <input 
+                            type="number" 
+                            name="year"
+                            placeholder="Year"
+                            class="input-date" 
+                            min="1924" max="2024"
+                            required
+                        >
+                    </form>
+                </div>
+        
+                <div class="wrap-btn">
+                    <div class="term">
+                        <input type="radio" class="term-radio" name="theradio" id="radio">
+                        <label for="radio" class="term-text">
+                            I agree with <span>Privacy Policy</span> 
+                            and <span>Terms of Conditions</span>
+                        </label>
+                    </div>                    
+                    <button class="btn-modal btn-ok" id="ok-btn">
+                            I wanna Adopt!
+                    </button>
+                    <button class="btn-modal btn-cancel" id="cancel-btn">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Fim Adopt Modal -->
     </main>
 
     <footer>
