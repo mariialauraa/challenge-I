@@ -149,7 +149,7 @@ body {
     gap: 32px;
 }
 
-.button-adopt {
+#adopt-modal {
     background-color: white;
     color: #1E1F27;
     width: 257px;
@@ -163,9 +163,10 @@ body {
     font-weight: 700;
     font-size: 20px;
     line-height: 28px;
+    cursor: pointer;
 }
 
-.button-adopt img {
+#adopt-modal img {
     height: 32px;
     width: 32px;
     vertical-align: middle;
@@ -649,7 +650,7 @@ body {
     margin-bottom: 60px;
 }
 
-input[type="text"] {
+.input-sub {
     width: 395px;
     height: 54px;
     border-radius: 32px;
@@ -664,7 +665,7 @@ input[type="text"] {
     margin-right: 24px;
 }
 
-input[type="text"]::placeholder {
+.input-sub::placeholder {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     size: 20px;

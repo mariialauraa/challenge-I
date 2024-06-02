@@ -1,0 +1,180 @@
+/* adopt-modal */
+#fade, 
+#modal {
+    transition: .5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+#fade {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+
+#modal {
+    position: fixed;
+    right: 28%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+    z-index: 10;
+    max-width: 448px;
+    max-height: 686px;
+    border-radius: 32px;
+    padding: 32px;
+}
+
+.modal-header {
+    width: 100%;
+    max-width: 384px;
+    max-height: 86px;
+    display: flex;
+    justify-content: center;
+}
+
+.title-modal {
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 57.6px;
+    letter-spacing: -2%;
+    color: #1E1F27;
+}
+
+.modal-body {
+    width: 100%;
+    max-width: 384px;
+    max-height: 488px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    margin: 32px auto;
+}
+
+.wrap {
+    width: 100%;
+    max-width: 384px;
+    height: 80px;
+    gap: 8px;
+    display: flex;
+    position: relative;
+}
+
+.form-modal {
+    width: 100%;
+    max-width: 384px;
+    max-height: 56px;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;    
+}
+
+.wrap label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FF3D9A;
+}
+
+.wrap label span {
+    color: #3F96FC;
+}
+
+.input {
+    width: 384px;
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid #3F96FC;
+    padding-left: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    size: 16px;
+}
+
+.input::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    size: 16px;
+    line-height: 24px;
+    color: #37383F;
+    text-align: left;
+}
+
+.input-date {
+    width: 122.67px;
+    height: 56px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    size: 16px;
+    border: 1px solid #3F96FC;
+    border-radius: 8px;
+    padding-left: 16px;
+    margin-right: 8px;
+}
+
+.input-date::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    size: 16px;
+    line-height: 24px;
+    color: #37383F;
+    text-align: left;
+}
+
+.wrap-btn {
+    width: 100%;
+    max-width: 384px;
+    max-height: 176px;
+    gap: 12px;
+}
+
+.term {
+    width: 100%;
+    max-width: 384px;
+    height: 24px;
+    gap: 12px; 
+    background-color: gray;
+}
+
+.btn-modal {
+    width: 384px;
+    height: 64px;
+    border-radius: 8px;
+    border: none;
+    padding: 16px 24px;
+    font-family: 'Poppins', sans-serif;
+    color: #F5F5F5;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -2%;
+    margin: 12px 0px;
+    cursor: pointer;
+}
+
+.btn-ok {
+    background-color: #04C27F;
+}
+
+.btn-cancel {
+    background-color: #37383F;
+}
+
+#modal.hide,
+#fade.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal.hide {
+    right: 0;
+}

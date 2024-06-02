@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desktop Page</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-modal.css">
 </head>
 <body>
     <header>
@@ -50,10 +51,85 @@
                                     <img src="../../public/assets/heart.svg" alt="heart icon">
                                     Donate
                                 </button>
-                                <button class="button-adopt">
+                                <button id="adopt-modal">
                                     <img src="../../public/assets/dog.svg" alt="dog icon">
                                     Apply to Adopt
                                 </button>
+
+                                <div id="fade" class="hide"></div>
+                                <div id="modal" class="hide">
+                                    <div class="modal-header">
+                                        <h1 class="title-modal">
+                                            Apply to Adopt
+                                        </h1>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <div class="wrap">
+                                            <label>
+                                                EMAIL<span>*</span>
+                                            </label>
+                                            <form class="form-modal">
+                                                <input 
+                                                    type="email" 
+                                                    placeholder="youremail@here"
+                                                    class="input" 
+                                                >
+                                            </form>
+                                        </div>
+                                        <div class="wrap">
+                                            <label>
+                                                FULL NAME<span>*</span>
+                                            </label>
+                                            <form class="form-modal">
+                                                <input 
+                                                    type="text" 
+                                                    placeholder="Your name"
+                                                    class="input" 
+                                                >
+                                            </form>
+                                        </div>
+                                        <div class="wrap">
+                                            <label>
+                                                DATE OF BIRTH<span>*</span>
+                                            </label>
+                                            <form class="form-modal">
+                                                <input 
+                                                    type="number" 
+                                                    name="day"
+                                                    placeholder="Day"
+                                                    class="input-date" 
+                                                    min="1" max="31"
+                                                >
+                                                <input 
+                                                    type="number" 
+                                                    name="month"
+                                                    placeholder="Month"
+                                                    class="input-date" 
+                                                    min="1" max="12"
+                                                >
+                                                <input 
+                                                    type="number" 
+                                                    name="year"
+                                                    placeholder="Year"
+                                                    class="input-date" 
+                                                    min="1924" max="2024"
+                                                >
+                                            </form>
+                                        </div>
+
+                                        <div class="wrap-btn">
+                                            <div class="term">
+                                            </div>
+                                            <button class="btn-modal btn-ok" id="ok-btn">
+                                                I wanna Adopt!
+                                            </button>
+                                            <button class="btn-modal btn-cancel" id="cancel-btn">
+                                                Cancel
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -237,8 +313,12 @@
                         <br>of animals finding their forever homes.
                     </p>
                 </div>
-                <form>
-                    <input type="text" placeholder="Enter your email">
+                <form class="sub">
+                    <input 
+                        type="email"
+                        placeholder="Enter your email"
+                        class="input-sub"
+                    >
                     <button class="btn-sub">Subscribe</button>
                 </form>
             </div>
@@ -308,5 +388,7 @@
             </h2>               
         </div>
     </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
