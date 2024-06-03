@@ -27,3 +27,17 @@ btnApplyAdopt.addEventListener("click", () => {
         form.reportValidity();
     }
 })
+
+// Redireciona para a página Adoptables
+const btnViewAdopt = document.querySelector(".btn-green")
+const btnViewAdopt2 = document.querySelector(".btn-view")
+
+const viewAdoptButtons = [btnViewAdopt, btnViewAdopt2];
+
+viewAdoptButtons.forEach((el) => {
+    if (el) {
+        el.addEventListener("click", () => {
+            location.href = '../adoptables_page/index.html';
+        })
+    }
+})
