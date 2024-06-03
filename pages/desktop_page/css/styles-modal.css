@@ -354,6 +354,8 @@ dialog::backdrop {
     display: block;
     margin: 0 auto;
     text-align: center;
+    cursor: pointer;
+    outline: none;
 }
 
 .button-help {

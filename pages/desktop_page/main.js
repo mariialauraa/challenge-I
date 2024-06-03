@@ -1,4 +1,4 @@
-const modal = document.querySelector("dialog")
+const modal = document.querySelector(".first-modal")
 const openModalAdopt = document.querySelector("#adopt-modal");
 const openModalAdopt2 = document.querySelector("#adopt-btn")
 const openModalAdopt3 = document.querySelector("#apply-btn")
@@ -40,4 +40,17 @@ viewAdoptButtons.forEach((el) => {
             location.href = '../adoptables_page/index.html';
         })
     }
+})
+
+// Donate Modal
+const modalDonate = document.querySelector(".second-modal")
+const openModalDonate = document.querySelector("#donate-modal")
+const closeModalDonate = document.querySelector("#close-donate")
+
+openModalDonate.addEventListener("click", () => {
+    modalDonate.showModal()
+})
+
+closeModalDonate.addEventListener("click", () => {
+    modalDonate.close()
 })
