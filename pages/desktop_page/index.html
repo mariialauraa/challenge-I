@@ -55,8 +55,6 @@
                                     <img src="../../public/assets/dog.svg" alt="dog icon">
                                     Apply to Adopt
                                 </button>
-
-
                             </div>
                         </div>
                     </div>
@@ -163,7 +161,7 @@
                                 <li>Be ready to adopt within 7-10 days</li>
                             </ul>
 
-                            <button id="adopt-btn">Apply to Adopt</button>
+                            <button type="button" id="adopt-btn">Apply to Adopt</button>
                         </div>
                     </div>
                 </div>
@@ -223,7 +221,7 @@
                     </div>
                     <div class="btn-container">
                         <button class="btn-adopt btn-view">View Adoptables</button>
-                        <button class="btn-adopt btn-apply">Apply to Adopt</button>
+                        <button id="apply-btn" class="btn-adopt btn-apply">Apply to Adopt</button>
                     </div>
 
                     <div class="image-dog">
@@ -254,46 +252,42 @@
         </section>
 
         <!-- Adopt Modal -->
-        <div id="fade" class="hide"></div>
-        <div id="modal" class="hide">
+        <dialog>
             <div class="modal-header">
                 <h1 class="title-modal">
                     Apply to Adopt
                 </h1>
             </div>
-        
-            <div class="modal-body">
-                <div class="wrap">
-                    <label>
-                        EMAIL<span>*</span>
-                    </label>
-                    <form class="form-modal">
+            <form id="form" class="modal-body" action="" method="post">                
+                <div class="wrap">         
+                    <label>EMAIL<span>*</span></label>
+                    <div class="form-modal">
                         <input 
                             type="email" 
+                            name="email"
                             placeholder="youremail@here"
                             class="input" 
                             required
                         >
-                    </form>
+                    </div>
                 </div>
+                
                 <div class="wrap">
-                    <label>
-                        FULL NAME<span>*</span>
-                    </label>
-                    <form class="form-modal">
+                    <label>FULL NAME<span>*</span></label>
+                    <div class="form-modal">
                         <input 
-                            type="text" 
+                            type="text"
+                            name="name"
                             placeholder="Your name"
-                            class="input" 
+                            class="input"
                             required
                         >
-                    </form>
+                    </div>
                 </div>
+                
                 <div class="wrap">
-                    <label>
-                        DATE OF BIRTH<span>*</span>
-                    </label>
-                    <form class="form-modal">
+                    <label>DATE OF BIRTH<span>*</span></label>
+                    <div class="form-modal">
                         <input 
                             type="number" 
                             name="day"
@@ -318,26 +312,35 @@
                             min="1924" max="2024"
                             required
                         >
-                    </form>
+                    </div>                        
                 </div>
-        
+                
                 <div class="wrap-btn">
                     <div class="term">
-                        <input type="radio" class="term-radio" name="theradio" id="radio">
-                        <label for="radio" class="term-text">
-                            I agree with <span>Privacy Policy</span> 
-                            and <span>Terms of Conditions</span>
+                        <label class="term-label">
+                            <input type="radio" name="terms" class="term-radio" required>
+                            <div class="term-text">
+                                I agree with 
+                                <a href="https://www.google.com" target="_blank">
+                                    <span>Privacy Policy</span>
+                                </a> 
+                                and 
+                                <a href="https://www.google.com" target="_blank">
+                                    <span>Terms of Conditions</span>
+                                </a>
+                            </div>
                         </label>
-                    </div>                    
-                    <button class="btn-modal btn-ok" id="ok-btn">
-                            I wanna Adopt!
+                    </div>
+                
+                    <button type="button" class="btn-modal btn-ok" id="ok-btn">
+                        I wanna Adopt!
                     </button>
-                    <button class="btn-modal btn-cancel" id="cancel-btn">
+                    <button type="button" class="btn-modal btn-cancel" id="cancel-btn">
                         Cancel
                     </button>
                 </div>
-            </div>
-        </div>
+            </form>
+        </dialog>
         <!-- Fim Adopt Modal -->
     </main>
 
