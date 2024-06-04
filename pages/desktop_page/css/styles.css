@@ -13,8 +13,6 @@ body {
     max-height: 120px;
     padding: 0px 116px;
     margin-top: 28px;
-    margin-bottom: 28px;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -82,20 +80,12 @@ body {
     max-width: 1512px;
     max-height: 816px;
     padding: 80px 0px 120px 0px;
-    gap: 40px;
-    box-sizing: border-box;
-    margin: 0;
     display: flex;
     align-items: center;
 }
 
 .main-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container {
+    width: 100%;
     max-width: 1208px;
     max-height: 616px;
     display: flex;
@@ -105,13 +95,14 @@ body {
 
 .info-block {
     margin-left: 152px;
+    width: 584px;
+    height: 555px;
 }
 
 .text-block {
     width: 584px;
-    height: 516px;
+    max-height: 516px;
     margin-right: 40px;
-    padding-top: 80px;
 }
 
 .text-block h1 {
@@ -134,8 +125,7 @@ body {
 }
 
 .cta-block {
-    margin: 0;
-    padding-bottom: 120px;
+    margin-top: 48px;
 }
 
 .cta-block h3 {
@@ -196,10 +186,6 @@ body {
     width: 100%;
     max-width: 1208px;
     max-height: 764px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 .title-text {
@@ -215,6 +201,7 @@ body {
 #stats-list {
     display: flex;
     justify-content: center;
+    align-items: center;
     list-style: none; 
     padding: 0;
     gap: 40px;
@@ -239,6 +226,64 @@ body {
     font-size: 32px;
     font-weight: 700;
     margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1208px;
+    position: relative;
+}
+
+.wrapper i {
+    height: 44px;
+    width: 44px;
+    background: #F5F5F5;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    font-size: 1.25rem;
+    transform: translateY(-50%);
+    box-shadow: 0 3px 6px rgb(0, 0, 0, 0.23);
+}
+
+.wrapper i:first-child {
+    left: -10px;
+}
+
+.wrapper i:last-child {
+    right: -50px;
+}
+
+.wrapper .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 4) - 12px);
+    gap: 16px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.carousel :where(.card, .img-carousel) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.carousel .card {
+    height: 326px;
+    list-style: none;
+    /* cursor: pointer; */
+}
+
+.card .img-carousel img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
 }
 
 /* donations-block */
@@ -314,16 +359,12 @@ body {
     max-width: 1512px;
     max-height: 907px;
     background-color: #F5F5F5;
-    box-sizing: border-box;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+    padding: 80px, 0px, 120px, 0px;
 }
 
 .main-content4 {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 1208px;
     height: auto;
     margin: 80px 120px 152px 152px;
@@ -390,14 +431,13 @@ body {
     width: 217px;
     height: 64px;
     border-radius: 32px;
-    padding: 16px 32px;
-    gap: 8px;
     border: none;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 28px;
     margin-top: 32px;
+    margin-left: 20px;
     cursor: pointer;
 }
 

@@ -66,3 +66,20 @@ helpModalButton.addEventListener("click", () => {
         donateForm.reportValidity();
     }
 })
+
+const carousel = document.querySelector(".carousel")
+const arrowBtns = document.querySelectorAll(".wrapper i")
+const firstCardWidth = carousel.querySelector(".card").offsetWidth
+const carouselChildrens = [...carousel.children]
+
+let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth)
+
+carouselChildrens.slice(0, cardPerView).forEach(card => {
+    carousel.insertAdjacentHTML("beforeend", card.outerHTML)
+})
+
+arrowBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+        carousel.scrollLeft += btn.id === "left" ? -firstCardWidth : firstCardWidth
+    })
+})
