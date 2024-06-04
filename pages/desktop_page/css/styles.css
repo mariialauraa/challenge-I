@@ -691,6 +691,10 @@ body {
     line-height: 32px;
 }
 
+.btn-sub a {
+    text-decoration: none;
+}
+
 /* footer */
 footer {
     width: 100%;

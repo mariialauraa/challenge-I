@@ -115,6 +115,88 @@
         </div>
     </section>
 
+    <!-- Donate Modal -->
+    <dialog class="second-modal">
+        <div class="donate-header">
+            <h1 class="title-modal">
+                Choose your Donate
+            </h1>
+        </div>
+        <form id="donate-form" class="donate-body" action="" method="post">                
+            <div class="wrap-donate">
+                <label class="wrap-label">EMAIL<span>*</span></label>
+                <div class="form-donate">
+                    <input 
+                        type="email" 
+                        name="email"
+                        placeholder="youremail@here"
+                        class="input" 
+                        required
+                    >
+                </div>
+            </div>                        
+            <div class="wrap-donate">
+                <label class="wrap-label">HOW MUCH CAN YOU HELP?<span>*</span></label>
+                <div class="form-donate">
+                    <input 
+                        type="number"
+                        name="value"
+                        id="value"
+                        min="1.00"
+                        step="0.05"
+                        placeholder="R$ 95,00"
+                        class="input input-donate"
+                        required
+                    >
+                </div>
+            </div>
+    
+            <div class="wrap wrap-pay">
+                <label class="wrap-label">PAYMENT METHOD<span>*</span></label>
+                <div class="container-pay">                        
+                    <div class="box-pay">
+                        <input 
+                            type="radio" 
+                            name="payment" 
+                            class="input-pay" 
+                            id="pix"
+                            required
+                        >
+                        <label for="pix" class="label-pay">Pix</label>
+                    </div>
+                    <div class="box-credit">
+                        <input 
+                            type="radio" 
+                            name="payment" 
+                            class="input-pay" 
+                            id="credit" 
+                        >
+                        <label for="credit" class="label-pay">Credit Card</label>
+                    </div>
+                    <div class="box-pay">
+                        <input 
+                            type="radio" 
+                            name="payment" 
+                            class="input-pay" 
+                            id="paypal"
+                        >
+                        <label for="paypal" class="label-pay">Paypal</label>
+                    </div>
+                </div>
+            </div>
+    
+            <button type="button" class="btn-donate button-help" id="help-btn">
+                <img src="../../public/assets/heart.svg" alt="heart icon">
+                I wanna Help!
+            </button>
+            <button type="button" class="btn-donate button-cancel" id="close-donate">
+                <img src="../../public/assets/back_icon.svg" alt="back icon">
+                Cancel
+            </button>
+        </form>
+    </dialog>
+    <!-- Fim Donate Modal -->
+
     <footer>
         <div class="main-content-footer"> 
             <div class="container-footer">

@@ -16,7 +16,6 @@ closeModalAdopt.addEventListener("click", () => {
     modal.close()
 })
 
-// Redireciona para a página Success
 const form = document.getElementById("form");
 const btnApplyAdopt = document.getElementById("ok-btn");
 
@@ -28,7 +27,6 @@ btnApplyAdopt.addEventListener("click", () => {
     }
 })
 
-// Redireciona para a página Adoptables
 const btnViewAdopt = document.querySelector(".btn-green")
 const btnViewAdopt2 = document.querySelector(".btn-view")
 
@@ -42,15 +40,29 @@ viewAdoptButtons.forEach((el) => {
     }
 })
 
-// Donate Modal
 const modalDonate = document.querySelector(".second-modal")
 const openModalDonate = document.querySelector("#donate-modal")
+const openDonateNavBar = document.querySelector("#btn-navbar")
 const closeModalDonate = document.querySelector("#close-donate")
+const helpModalButton = document.querySelector("#help-btn")
+const donateForm = document.getElementById("donate-form")
 
-openModalDonate.addEventListener("click", () => {
-    modalDonate.showModal()
+openDonateButtons = [openModalDonate, openDonateNavBar]
+
+openDonateButtons.forEach((el) => {
+    if (el) {
+        el.addEventListener("click", () => modalDonate.showModal());
+    }
 })
 
 closeModalDonate.addEventListener("click", () => {
     modalDonate.close()
+})
+
+helpModalButton.addEventListener("click", () => {
+    if (donateForm.checkValidity()) {
+        location.href = '../success_page/index.html'
+    } else {
+        donateForm.reportValidity();
+    }
 })
